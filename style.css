@@ -1,0 +1,74 @@
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pdf_Container {
+  aspect-ratio: 1/1.41;
+  max-width: 595px;
+  width: 80vw;
+}
+
+.button_Download {
+    text-decoration: none;
+    width: 300px;
+    color: black;
+    background-color: #f1f1f1;
+    padding: 10px 0px;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes greet {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(15deg);
+    }
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(15deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+.presentation::before{
+    content: '👋';
+    animation-name: greet;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform-origin: 80% 80%;
+    display: inline-block;
+}
