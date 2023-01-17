@@ -6,19 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Cv</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <div class="container">
         <div class="intro">
-            <h1 class="presentation">Hola, soy <span class="span">Gregorio</span></h1>
-            <h2>Desarrollador FullStack</h2>
+            <div class="presentation-text" data-aos="fade-right" data-aos-delay="300" data-aos-duration="600">
+                <h1 class="presentation">Hola, soy <span class="span">Gregorio</span></h1>
+                <h2>Desarrollador FullStack</h2>
+            </div>
         </div>
-        <img class="pdf_Container" src="Curriculum.png" alt="Curriculum Gregorio Bujor">
+        <img data-aos="fade-left" data-aos-delay="600" data-aos-duration="600" class="pdf_Container" src="Curriculum.png" alt="Curriculum Gregorio Bujor">
         <a class="button_Download" href="Curriculum.pdf" download="Curriculum.pdf">Descargar PDF</a>
     </div>
     <div class="ocean">
         <div class="wave"></div>
         <div class="wave"></div>
       </div>
+      <script>
+        AOS.init();
+      </script>
 </body>
 </html>
