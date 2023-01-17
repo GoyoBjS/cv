@@ -178,13 +178,31 @@ h2{
       width: 100vw;
       box-sizing: border-box;
   }
+  .intro {
+    width: 100vw;
+    height: 30vh;
+    background-color: #253B3F;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+
+.pdf_Container {
+  position: relative;
+  aspect-ratio: 1/1.415;
+  max-width: 595px;
+  width: 80vw;
+  z-index: 2;
+  margin-top: 25vh;
+}
+
   .ocean { 
     height: 5vh;
     width:100vw;
     position:absolute;
-    bottom:1;
+    bottom:0;
     left:0;
-    background: #253B3F;
+    background: #015871;
   }
   
   .wave {
