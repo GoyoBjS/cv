@@ -2,7 +2,7 @@
 body {
     /* background-color: antiquewhite; */
     font-family: 'Montserrat', sans-serif;
-    /* background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%); */
+    background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
     overflow-x: hidden;
     position: relative;
     height: 100vh;
@@ -171,13 +171,26 @@ h2{
     box-sizing: border-box;
       /* background-color: antiquewhite; */
       font-family: 'Montserrat', sans-serif;
-      /* background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%); */
+      background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%);
       overflow-x: hidden;
       position: fixed;
       height: 100vh;
       width: 100vw;
       box-sizing: border-box;
   }
+  h2{
+    margin-top: 0;
+    font-size: 7.5vw;
+  }
+  .span {
+    display: block;
+      font-size: 52px;
+      font-weight: bold;
+      color: #f1f1f1;
+      text-align: center;
+      margin-top: 10px;
+  }
+  
   .intro {
     width: 100vw;
     height: 30vh;
@@ -193,7 +206,7 @@ h2{
   max-width: 595px;
   width: 80vw;
   z-index: 2;
-  margin-top: 25vh;
+  margin-top: 26vh;
 }
 
   .ocean { 
