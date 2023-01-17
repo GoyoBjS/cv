@@ -1,7 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,500&display=swap');
 body {
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
     font-family: 'Montserrat', sans-serif;
+    /* background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%); */
+    overflow-x: hidden;
+    position: relative;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+h1,h2{
+  font-weight: 700;
+  font-size: 32px;
 }
 
 .container {
@@ -14,17 +24,33 @@ body {
 
 .intro {
     width: 100vw;
+    height: 40vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    background-color: blueviolet;
+    background-color: #253B3F;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+}
+
+.span {
+  display: block;
+    font-size: 64px;
+    font-weight: bold;
+    color: #f1f1f1;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .pdf_Container {
+  position: relative;
   aspect-ratio: 1/1.415;
   max-width: 595px;
   width: 80vw;
+  z-index: 2;
+  margin-top: 30vh;
 }
 
 .button_Download {
@@ -39,6 +65,7 @@ body {
     font-weight: bold;
     cursor: pointer;
     font-family: 'Courier New', Courier, monospace;
+    z-index: 2;
 }
 
 @keyframes greet {
@@ -75,4 +102,79 @@ body {
     animation-iteration-count: infinite;
     transform-origin: 80% 80%;
     display: inline-block;
+}
+
+.ocean { 
+  height: 5vh;
+  width:100vw;
+  position:absolute;
+  bottom:1;
+  left:0;
+  background: #015871;
+}
+
+.wave {
+  background: url(wave.svg) repeat-x; 
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  min-height: 198px;
+  max-height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+      /* background-color: antiquewhite; */
+      font-family: 'Montserrat', sans-serif;
+      /* background:radial-gradient(ellipse at center, rgba(255,254,234,1) 0%, rgba(255,254,234,1) 35%, #B7E8EB 100%); */
+      overflow-x: hidden;
+      position: fixed;
+      height: 100vh;
+      box-sizing: border-box;
+  }
+  .ocean { 
+    height: 5vh;
+    width:100vw;
+    position:absolute;
+    bottom:1;
+    left:0;
+    background: #015871;
+  }
+  
+  .wave {
+    background: url(wave.svg) repeat-x; 
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    min-height: 198px;
+    max-height: 198px;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+  }
 }
