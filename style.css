@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,500&display=swap');
 body {
     background-color: antiquewhite;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -11,14 +13,16 @@ body {
 }
 
 .intro {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: blueviolet;
 }
 
 .pdf_Container {
-  aspect-ratio: 1/1.41;
+  aspect-ratio: 1/1.415;
   max-width: 595px;
   width: 80vw;
 }
